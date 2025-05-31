@@ -146,26 +146,35 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(178, 255, 127, 0.5));
+}
+
+
+.service-card i {
+    font-size: 95px;
+    padding: 10px;
+    display: inline-block;
+    background-image: linear-gradient(
+        to left,
+        var(--brand-light-color),
+        var(--brand-white)
+    );
+    background-size: 200% 200%; /* enables movement */
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: roll 10s linear infinite;
 }
 
-@keyframes roll{
-    from{
-        width: 0%;
-        opacity: 1;
+@keyframes roll {
+    0% {
+        background-position: 0% 0%;
     }
-    to{
-        width: 100%;
-        opacity: 0;
+    100% {
+        background-position: 100% 100%;
     }
 }
 
-.service-card i{
-    font-size: 95px;
-    padding: 10px;
-    color: var(--brand-white);
-}
 
 .service-card p{
     color: var(--brand-white);
