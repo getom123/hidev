@@ -1,0 +1,104 @@
+:root{
+    --brand-main-color: #009933;
+    --brand-main-dark-color: #023513;
+    --brand-light-color: #B3E840;
+    --brand-dark-color: #000;
+    --brand-dark-light: #ddd;
+    --brand-white: #fff;
+    --brand-gray: #eee;
+}
+
+.main-content{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+}
+
+.main-content .about-content{
+    padding: 50px 25px;
+}
+
+.main-content .about-content h2{
+    text-align: center;
+    font-size: 35px;
+    color: var(--brand-white);
+    position: relative;
+}
+
+.main-content .about-content h2::before{
+    content: '';
+    height: 5px;
+    width: 60%;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, var(--brand-light-color), var(--brand-main-dark-color));
+}
+
+.main-content .about-content .about-content-p p{
+    /* width: 50%; */
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--brand-white);
+    text-align: justify;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.first-card{
+    color: var(--brand-white);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(27, 53, 27, 0.945));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.first-card:first-child{
+    margin-top: 10px;
+}
+
+.first-card img{
+    width: 200px;
+    aspect-ratio: 2/2;
+}
+
+.first-card .frist-card-content h3{
+    color: var(--brand-light-color);
+}
+
+.socials{
+    margin-top: 10px;
+}
+
+.socials a{
+    font-size: 30px;
+    margin-right: 10px;
+    color: var(--brand-white);
+    transition: 1s ease;
+}
+
+.socials a:hover{
+    color: var(--brand-light-color);
+}
+
+@media screen and (max-width: 796px) {
+    .first-card{
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .first-card .frist-card-content h3{
+        text-align: center;
+    }
+}

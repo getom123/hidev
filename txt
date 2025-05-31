@@ -1,0 +1,39 @@
+---
+
+🧩 Card 1:
+
+Content:
+
+> 
+
+
+
+Suggested Image Type:
+
+Animated illustration of a team working on laptops or coding on a whiteboard.
+
+Keyword for search: “teamwork animation” or “developers coding animation” (Lottie/Storyset)
+
+
+
+---
+
+🧩 Card 2: What We Do
+
+Content:
+
+> At Hi-Dev, we offer hands-on coding tutorials, design bootcamps, and digital tools to help learners grow from beginners to confident creators. Whether you're learning HTML, CSS, JavaScript, or diving into frameworks like React, our step-by-step approach makes learning engaging and effective.
+
+Suggested Image Type:
+
+Animation showing someone coding on a computer or a progress journey.
+
+Keyword for search: “web development animation” or “learning process animation”
+
+---
+
+🧩 Card 3: Our Mission
+
+Content:
+
+> Our mission is to democratize access to tech education by making it fun, interactive, and relevant. We aim to help people—especially in Africa—realize their potential through continuous learning, mentorship, and collaboration on real projects.
