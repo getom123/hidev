@@ -130,6 +130,21 @@ body{
     animation-delay: 1s;
 }
 
+.socials{
+    margin-top: 10px;
+}
+
+.socials a{
+    font-size: 30px;
+    margin-right: 10px;
+    color: var(--brand-white);
+    transition: 1s ease;
+}
+
+.socials a:hover{
+    color: var(--brand-light-color);
+}
+
 @keyframes rotate{
     0%{
         border: 2px solid var(--brand-white);
