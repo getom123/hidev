@@ -11,15 +11,13 @@ function loadHTML(id, file) {
 Promise.all([
   loadHTML('header', 'page/header.html'),
   loadHTML('content', 'page/home.html'),
-//   loadHTML('footer', 'page/footer.html')
+  loadHTML('footer', 'page/footer.html')
 ]).then(() => {
   AOS.init({
     duration: 1500,
     once: false, // Animation repeats every time
   });
 });
-
-//load aos
 
 
 function viewfunct(){

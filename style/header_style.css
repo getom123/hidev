@@ -32,7 +32,7 @@ body{
 }
 
 .navbar{
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 255, 149, 0.1);
     backdrop-filter: blur(6.3px);
     -webkit-backdrop-filter: blur(6.3px);
     padding: 15px 25px;
@@ -44,18 +44,18 @@ body{
     justify-content: space-between;
 }
 
-.navbar .container .navbar-brand {
+.navbar-brand {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.navbar .container .navbar-brand span{
+.navbar-brand span{
     font-size: 30px;
     color: #fff;
 }
 
-.navbar .container .navbar-brand img{
+.navbar-brand img{
     width: 70px;
     height: auto;
 }
@@ -103,7 +103,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../media/human.png'), rgba(255, 255, 255, 0.1);
+    background: url('../media/human.png'), rgba(0, 255, 149, 0.1);;
     background-repeat: no-repeat;
     background-position: 25%;
     background-size: contain;
@@ -190,6 +190,7 @@ body{
 .btn:hover{
     opacity: 0.2;
 }
+
 /* Mobile styles */
 @media screen and (max-width: 796px) {
     .navbar .container {
