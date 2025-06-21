@@ -71,18 +71,16 @@
 
 .first-card{
     color: var(--brand-white);
-    background: rgba(255, 255, 255, 0.041);
+    width: 70%;
+    /* background: rgba(255, 255, 255, 0.041); */
+    background: #065a22af;
     backdrop-filter: blur(6.3px);
     -webkit-backdrop-filter: blur(6.3px);
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    width: 70%;
+    border-radius: 10px;
+    text-align: start;
+    padding: 20px 20px 20px 150px;
+    /* overflow: hidden; */
     position: relative;
-    border-radius: 20px;
-    overflow: hidden;
 }
 
 .first-card::before{
@@ -112,12 +110,44 @@
 }
 
 .first-card img{
-    width: 200px;
+    width: 350px;
+    position: absolute;
+    top: 20%;
+    left: -21%;
     aspect-ratio: 2/2;
+}
+
+.first-card .box_1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 25%;
+    left: -10%;
+    border: 2px solid #fff;
+    animation: boxrotate linear infinite 5s;
+}
+
+@keyframes boxrotate{
+    0%{
+        border: 2px solid var(--brand-white);
+        z-index: 99;
+    }
+    50%{
+        border: 6px solid #d7ff82;
+    }
+    100%{
+        rotate: 360deg;
+        border: 2px solid var(--brand-light-color);
+    }
+}
+
+.first-card .frist-card-content h3{
+    margin-top: 10px;
 }
 
 .first-card .frist-card-content h3, .service-card h3{
     color: var(--brand-light-color);
+
 }
 
 .service-content{
@@ -131,7 +161,8 @@
 
 .service-card{
     width: 70%;
-    background: rgba(255, 255, 255, 0.041);
+    /* background: rgba(255, 255, 255, 0.041); */
+    background: #065a22af;
     backdrop-filter: blur(6.3px);
     -webkit-backdrop-filter: blur(6.3px);
     border-radius: 10px;
@@ -171,7 +202,8 @@
 .contact form{
     margin-top: 20px;
     width: 70%;
-    background: rgba(255, 255, 255, 0.041);
+    /* background: rgba(255, 255, 255, 0.041); */
+    background: #065a22af;
     backdrop-filter: blur(6.3px);
     -webkit-backdrop-filter: blur(6.3px);
     border-radius: 10px;
@@ -191,7 +223,7 @@
 .contact form input, .contact form textarea{
     width: 100%;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.849);
+    background: rgba(145, 255, 145, 0.24);
     border: none;
 }
 
@@ -227,6 +259,24 @@ button.btn{
 }
 
 @media screen and (max-width: 996px){
+    .first-card{
+        padding: 0px;
+        background: url("../media/robo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+    }
+
+    .frist-card-content{
+        background: #065a22af;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+     .first-card img, .first-card .box_1{
+        display: none;
+    }
+
      .service-card{
         padding: 50px 160px 50px 10px;
     }
@@ -237,5 +287,17 @@ button.btn{
         height: 200px;
         bottom: 30px;
         right: -20px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .first-card img{
+        top: 20%;
+        left: -27%;
+    }
+
+    .first-card .box_1{
+        top: 25%;
+        left: -15%;
     }
 }
